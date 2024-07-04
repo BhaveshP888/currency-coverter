@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 function App() {
   useEffect(() => {
     setYear(new Date().getFullYear());
-  }, [])
-  const [year,setYear] = useState(new Date().getFullYear())
+  }, []);
+  const [year, setYear] = useState(new Date().getFullYear());
   const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
@@ -32,7 +32,7 @@ function App() {
       <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg')`,
+          backgroundImage: `url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
         }}
       >
         <div className="w-full">
@@ -92,7 +92,7 @@ function App() {
             </form>
           </div>
         </div>
-        <footer className=" backdrop:blur-lg bg-white/10 absolute bottom-2 w-full">
+        <footer className=" backdrop:blur-sm bg-white/20 absolute bottom-2 w-1/4 rounded-2xl border border-gray-30">
           <p className="text-white text-lg text-bold text-center">
             Copyright @{year} Bhavesh Patil
           </p>

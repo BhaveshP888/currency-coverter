@@ -20,7 +20,7 @@ export default function InputBox({
   onAmountChange,
   onCurrencyChange,
   currencyOptions,
-  selectCurrency,
+  // selectCurrency,
   amountDisable = false,
   currencyDisable = false,
   className = "",
