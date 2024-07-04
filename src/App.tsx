@@ -6,10 +6,10 @@ import useCurrencyInfo from "./hooks/useCurrencyInfo.js";
 import Input from "./components/InputBox.js";
 import { useEffect, useState } from "react";
 function App() {
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
-  const [year, setYear] = useState(new Date().getFullYear());
+  // useEffect(() => {
+  //   setYear(new Date().getFullYear());
+  // }, []);
+  // const [year, setYear] = useState(new Date().getFullYear());
   const [amount, setAmount] = useState<number | string>("");
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
