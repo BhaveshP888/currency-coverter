@@ -99,7 +99,7 @@ function App() {
             </form>
           </div>
         </div>
-        <footer className=" backdrop:blur-sm bg-white/20 absolute bottom-2 w-1/4 rounded-2xl border border-gray-30">
+        <footer className=" p-2 backdrop:blur-sm bg-white/20 absolute bottom-2 w-1/1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 rounded-2xl border border-gray-300">
           <p className="text-white text-lg text-bold text-center">
             Copyright @{year} Bhavesh Patil
           </p>
