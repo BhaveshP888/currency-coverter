@@ -1,6 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore
 import { FaGithub } from "react-icons/fa";
+
+//@ts-ignore
 import useCurrencyInfo from "./hooks/useCurrencyInfo.js";
 import Input from "./components/InputBox.js";
 import { useEffect, useState } from "react";
