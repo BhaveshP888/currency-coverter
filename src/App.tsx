@@ -10,7 +10,7 @@ function App() {
     setYear(new Date().getFullYear());
   }, []);
   const [year, setYear] = useState(new Date().getFullYear());
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState<number | string>("");
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
   const [convertedAmount, setConvertedAmount] = useState(0);
@@ -20,13 +20,17 @@ function App() {
   const swap = () => {
     setFrom(to);
     setTo(from);
-    setConvertedAmount(amount);
+    setConvertedAmount(amount as number);
     setAmount(convertedAmount);
   };
 
   const convert = () => {
-    setConvertedAmount(amount * currencyInfo[to]);
-  };
+    if (amount === 0) {
+      setConvertedAmount(0)
+    } else {
+      setConvertedAmount((amount as number) * currencyInfo[to]);
+    }
+    };
 
   const options = Object.keys(currencyInfo);
   return (
@@ -101,7 +105,7 @@ function App() {
         </div>
         <footer className=" p-2 backdrop:blur-sm bg-white/20 absolute bottom-2 w-1/1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 rounded-2xl border border-gray-300">
           <p className="text-white text-lg text-bold text-center">
-            Copyright @{year} Bhavesh Patil
+            Copyright @{year} BhaveshP
           </p>
         </footer>
       </div>

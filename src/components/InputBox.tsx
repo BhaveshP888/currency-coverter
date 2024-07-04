@@ -3,7 +3,7 @@ import { useId } from "react";
 interface inputProps {
   label: string;
   currCurrency: string;
-  amount: number;
+  amount: number | string;
   onAmountChange: (amount : number) => void;
   onCurrencyChange: (currency : string) => void;
   currencyOptions: string[];
