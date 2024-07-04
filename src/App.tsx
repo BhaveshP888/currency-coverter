@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
+import { FaGithub } from "react-icons/fa";
 import useCurrencyInfo from "./hooks/useCurrencyInfo.js";
 import Input from "./components/InputBox.js";
 import { useEffect, useState } from "react";
@@ -35,6 +36,11 @@ function App() {
           backgroundImage: `url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
         }}
       >
+        <div className="fixed top-2 right-2 z-10">
+          <a href="https://github.com/BhaveshP888/currency-coverter">
+            <FaGithub className="text-2xl text-white" />
+          </a>
+        </div>
         <div className="w-full">
           <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30 ">
             <form
